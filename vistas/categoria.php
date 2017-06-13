@@ -21,16 +21,20 @@ require 'header.php';
                           <thead>
                             <th>Opciones</th>
                             <th>Nombre</th>
-                            <th>Descripción</th>
-                            <th>Estado</th>
+                            <th>Cuit</th>
+                            <th>Direccion</th>
+                            <th>Ciudad</th>
+                            <th>Provincia</th>
                           </thead>
                           <tbody>                            
                           </tbody>
                           <tfoot>
                             <th>Opciones</th>
                             <th>Nombre</th>
-                            <th>Descripción</th>
-                            <th>Estado</th>
+                            <th>Cuit</th>
+                            <th>Direccion</th>
+                            <th>Ciudad</th>
+                            <th>Provincia</th>
                           </tfoot>
                         </table>
                     </div>
@@ -38,12 +42,28 @@ require 'header.php';
                         <form name="formulario" id="formulario" method="POST">
                           <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
                             <label>Nombre:</label>
-                            <input type="hidden" name="idcategoria" id="idcategoria">
+                            <input type="hidden" name="idOperadores" id="idOperadores">
                             <input type="text" class="form-control" name="nombre" id="nombre" maxlength="50" placeholder="Nombre" required>
                           </div>
                           <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                            <label>Descripción:</label>
-                            <input type="text" class="form-control" name="descripcion" id="descripcion" maxlength="256" placeholder="Descripción">
+                            <label>Cuit:</label>
+                            <input type="text" class="form-control" name="cuit" id="cuit" maxlength="256" placeholder="cuit">
+                          </div>
+                          <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <label>Direccion:</label>
+                            <input type="text" class="form-control" name="direccion" id="direccion" maxlength="256" placeholder="Direccion">
+                          </div>
+                          <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <label>Ciudad:</label>
+                            <input type="text" class="form-control" name="ciudad" id="ciudad" maxlength="256" placeholder="Ciudad">
+                          </div>
+                          <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <label>Telefono:</label>
+                            <input type="text" class="form-control" name="tel" id="tel" maxlength="256" placeholder="Telefono">
+                          </div>
+                          <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <label>Observacion:</label>
+                            <input type="text" class="form-control" name="observacion" id="observacion" maxlength="256" placeholder="observacion">
                           </div>
                           <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <button class="btn btn-primary" type="submit" id="btnGuardar"><i class="fa fa-save"></i> Guardar</button>
@@ -63,4 +83,4 @@ require 'header.php';
 <?php
 require 'footer.php';
 ?>
-<script type="text/javascript" src="scripts/categoria.js"></script>
+<script type="text/javascript" src="scripts/operadores.js"></script>
