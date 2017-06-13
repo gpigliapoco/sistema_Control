@@ -41,7 +41,11 @@ switch ($_GET["op"]) {
 
 			while ($registro=$respuesta->fetch_object()) {
 				$data[]=array(
+
 					"0"=>'<button class="btn btn-warning" onclick="mostrar('.$registro->idOperadores.')"><i class="fa fa-pencil"></i></button>'.
+
+				
+
  					' <button class="btn btn-danger" onclick="eliminar('.$registro->idOperadores.')"><i class="fa fa-trash"></i></button>',
  					"1"=>$registro->nombre,
  					"2"=>$registro->cuit,
