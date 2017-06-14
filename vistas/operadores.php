@@ -62,7 +62,7 @@ require 'header.php';
                           </div>   
                           <div class="form-group"> <!-- State Button -->
                               <label for="state_id" class="control-label">Provincia</label>
-                              <select class="form-control" id="provincia">
+                              <select class="form-control" id="provincia" name="provincia">
                                   <option value="Buenos aires">Buenos aires</option>
                                   <option value="Buenos aires">Santa fe</option>
                                   <option value="Cordoba">Cordoba</option>

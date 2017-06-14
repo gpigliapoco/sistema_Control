@@ -5,6 +5,9 @@ function init()
 	mostrarform(false);
 	listar();
 	
+	$("#formulario").on("submit",function(e){
+		guardaryeditar(e);
+	})
 
 }
 
@@ -64,11 +67,35 @@ function listar()
 					}
 				},
 		"bDestroy": true,
-		"iDisplayLength": 10,//Paginación
+		"iDisplayLength": 8,//Paginación
 	    "order": [[ 0, "desc" ]]//Ordenar (columna,orden)
 	}).DataTable();
 }
-//Función para guardar o editar
+
+function guardaryeditar(e)
+{
+	e.preventDefault();
+	$("#btnGuardar").prop("disabled",true);
+	var formData=new FormData($("#formulario")[0]);
+
+	$.ajax({
+		url: "../ajax/operadores.php?op=guardaryeditar",
+		type: "post",
+		data: formData,
+		contentType:false,
+		processData:false,
+
+		success: function(datos)
+		{
+			bootbox.alert(datos);
+			mostrarform(false);
+			tabla.ajax.reload();
+		}
+
+	});
+
+	limpiar();
+}
 
 init();
 
