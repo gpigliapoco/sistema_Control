@@ -43,26 +43,26 @@ require 'header.php';
                         <form name="formulario" id="formulario" method="POST">                       
                          <div class="form-group"> <!-- Full Name -->
                             <label for="full_name_id" class="control-label">Nombre</label>
-                            <input type="text" class="form-control" id="full_name_id" name="full_name" placeholder="Razon social">
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Razon social">
                           </div>    
 
                           <div class="form-group"> <!-- Street 1 -->
                             <label for="street1_id" class="control-label">Cuit</label>
-                            <input type="text" class="form-control" id="street1_id" name="street1" placeholder="Cuit">
+                            <input type="text" class="form-control" id="cuit" name="cuit" placeholder="Cuit">
                           </div>                    
                             
                           <div class="form-group"> <!-- Street 2 -->
                             <label for="street2_id" class="control-label">Direccion</label>
-                            <input type="text" class="form-control" id="street2_id" name="street2" placeholder="Direccion">
+                            <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Direccion">
                            </div>    
 
                           <div class="form-group"> <!-- City-->
                               <label for="city_id" class="control-label">Ciudad</label>
-                              <input type="text" class="form-control" id="city_id" name="city" placeholder="Ciudad">
+                              <input type="text" class="form-control" id="ciudad" name="ciudad" placeholder="Ciudad">
                           </div>   
                           <div class="form-group"> <!-- State Button -->
                               <label for="state_id" class="control-label">Provincia</label>
-                              <select class="form-control" id="state_id">
+                              <select class="form-control" id="provincia">
                                   <option value="Buenos aires">Buenos aires</option>
                                   <option value="Buenos aires">Santa fe</option>
                                   <option value="Cordoba">Cordoba</option>
@@ -74,11 +74,11 @@ require 'header.php';
                           </div> 
                           <div class="form-group"> <!-- City-->
                               <label for="city_id" class="control-label">Telefono</label>
-                              <input type="text" class="form-control" id="city_id" name="city" placeholder="Telefono">
+                              <input type="text" class="form-control" id="tel" name="tel" placeholder="Telefono">
                           </div>     
                           <div class="form-group"> <!-- City-->
                               <label for="city_id" class="control-label">Observacion</label>
-                               <textarea class="form-control" id="message" name="message" placeholder="Observacion" rows="7"></textarea>
+                               <textarea class="form-control" id="observacion" name="observacion" placeholder="Observacion" rows="7"></textarea>
                           </div>     
 
 

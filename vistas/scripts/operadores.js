@@ -59,7 +59,6 @@ function listar()
 					url: '../ajax/operadores.php?op=listar',
 					type : "get",
 					dataType : "json",						
-				
 					error: function(e){
 						console.log(e.responseText);	
 					}
