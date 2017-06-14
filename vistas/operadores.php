@@ -38,35 +38,9 @@ require 'header.php';
                           </tfoot>
                         </table>
                     </div>
-                    <div class="panel-body" style="height: 400px;" id="formularioregistros">
-<<<<<<< HEAD
-                        <form name="formulario" id="formulario" method="POST">
-                          <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                            <label>Nombre:</label>
-                            <input type="hidden" name="idOperadores" id="idOperadores">
-                            <input type="text" class="form-control" name="nombre" id="nombre" maxlength="50" placeholder="Nombre" required>
-                          </div>
-                          <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                            <label>Cuit:</label>
-                            <input type="text" class="form-control" name="cuit" id="cuit" maxlength="256" placeholder="cuit">
-                          </div>
-                          <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                            <label>Direccion:</label>
-                            <input type="text" class="form-control" name="direccion" id="direccion" maxlength="256" placeholder="Direccion">
-                          </div>
-                          <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                            <label>Ciudad:</label>
-                            <input type="text" class="form-control" name="ciudad" id="ciudad" maxlength="256" placeholder="Ciudad">
-                          </div>
-                          <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                            <label>Telefono:</label>
-                            <input type="text" class="form-control" name="tel" id="tel" maxlength="256" placeholder="Telefono">
-                          </div>
-                          <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                            <label>Observacion:</label>
-                            <input type="text" class="form-control" name="observacion" id="observacion" maxlength="256" placeholder="observacion">
-                          </div>
-=======
+                    <div class="panel-body" style="height: 650px;" id="formularioregistros">
+
+                        <form name="formulario" id="formulario" method="POST">                       
                          <div class="form-group"> <!-- Full Name -->
                             <label for="full_name_id" class="control-label">Nombre</label>
                             <input type="text" class="form-control" id="full_name_id" name="full_name" placeholder="Razon social">
@@ -107,7 +81,7 @@ require 'header.php';
                                <textarea class="form-control" id="message" name="message" placeholder="Observacion" rows="7"></textarea>
                           </div>     
 
->>>>>>> test
+
                           <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <button class="btn btn-primary" type="submit" id="btnGuardar"><i class="fa fa-save"></i> Guardar</button>
 

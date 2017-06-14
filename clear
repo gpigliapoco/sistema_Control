@@ -1,0 +1,48 @@
+[33mcommit c60fa0b24350960df297637e4c7c4d16c032fefe[m[33m ([m[1;36mHEAD -> [m[1;32mform[m[33m)[m
+Merge: b32e3ba 35f6007
+Author: leo <gpigliapoco@gmail.com>
+Date:   Tue Jun 13 15:35:27 2017 -0300
+
+    se arreglo el formulario
+
+[33mcommit b32e3ba7b6c33afdc748bc439a9d926ebaf9c98a[m[33m ([m[1;32mmaster[m[33m)[m
+Author: leo <gpigliapoco@gmail.com>
+Date:   Tue Jun 13 02:03:43 2017 -0300
+
+    no carga la tabla operadores
+
+[33mcommit a9ed5b1164812fdd15346b9c7b7a60d4144d86c7[m
+Author: leo <gpigliapoco@gmail.com>
+Date:   Tue Jun 13 01:15:38 2017 -0300
+
+    se agregaron modelos de operadores
+
+[33mcommit 35f6007f3b1e6e51d0015bd31fdc2d74e02cef58[m[33m ([m[1;32mtest[m[33m)[m
+Author: leo <gpigliapoco@gmail.com>
+Date:   Tue Jun 13 00:30:31 2017 -0300
+
+    formulario de operadores agregado todos los campos
+
+[33mcommit 7e78a86ccae2e0bc21c3b32228636bf064be485c[m
+Author: leo <gpigliapoco@gmail.com>
+Date:   Tue Jun 13 00:12:19 2017 -0300
+
+    se modifico el formulario de operadores
+
+[33mcommit 5b57dc7a5bb62c54234c0f78e29201c5bec074a3[m
+Author: leo <gpigliapoco@gmail.com>
+Date:   Mon Jun 12 22:42:31 2017 -0300
+
+    agregando plantilla boostrap
+
+[33mcommit 0056879774543faefbab4988f574f8bd6aaf112b[m
+Author: leo <gpigliapoco@gmail.com>
+Date:   Mon Jun 12 22:24:58 2017 -0300
+
+    se agrego archivo conexion
+
+[33mcommit 8a52562e3780294b7a7710be9bc9d818e1ed8da9[m
+Author: leo <gpigliapoco@gmail.com>
+Date:   Mon Jun 12 21:00:33 2017 -0300
+
+    se agrego archivo de conexion

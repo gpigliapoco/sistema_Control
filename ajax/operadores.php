@@ -43,25 +43,21 @@ switch ($_GET["op"]) {
 				$data[]=array(
 
 					"0"=>'<button class="btn btn-warning" onclick="mostrar('.$registro->idOperadores.')"><i class="fa fa-pencil"></i></button>'.
-
-				
-
  					' <button class="btn btn-danger" onclick="eliminar('.$registro->idOperadores.')"><i class="fa fa-trash"></i></button>',
  					"1"=>$registro->nombre,
- 					"2"=>$registro->cuit,
- 					"3"=>$registro->direccion,
+ 					"2"=>$registro->direccion,
+ 					"3"=>$registro->cuit,
  					"4"=>$registro->ciudad,
  					"5"=>$registro->provincia
 
 					);	
 			}
-			$results= array(
-				"sEcho"=>1,
-				"iTotalRecords"=>count($data),
-				"iTotalDisplayRecords"=>count($data),
-				"aaData"=>$data
-				);
-			echo json_encode($results);
+			$results = array(
+ 			"sEcho"=>1, //Información para el datatables
+ 			"iTotalRecords"=>count($data), //enviamos el total registros al datatable
+ 			"iTotalDisplayRecords"=>count($data), //enviamos el total registros a visualizar
+ 			"aaData"=>$data);
+ 		echo json_encode($results);
 			break;	
 
 	
