@@ -2,7 +2,7 @@
 
 require_once "../modelos/productos.php";
 
-$productos =new Porductos();
+$productos =new Productos();
 
 $idProductos=isset($_POST["idProductos"])?limpiarCadena($_POST["idProductos"]):"";
 $nombre=isset($_POST["nombre"])?limpiarCadena($_POST["nombre"]):"";
