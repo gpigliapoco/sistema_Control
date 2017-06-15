@@ -76,7 +76,7 @@ require 'header.php';
                           </div> 
                           <div class="form-group"> <!-- City-->
                               <label for="city_id" class="control-label">Telefono</label>
-                              <input type="text" class="form-control" id="tel" name="tel" placeholder="Telefono">
+                              <input type="text" class="form-control" id="number" name="tel" placeholder="Telefono">
                           </div>     
                           <div class="form-group"> <!-- City-->
                               <label for="city_id" class="control-label">Observacion</label>

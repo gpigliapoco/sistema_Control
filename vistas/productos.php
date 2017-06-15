@@ -40,12 +40,12 @@ require 'header.php';
                          <div class="form-group"> <!-- Full Name -->
                             <label for="full_name_id" class="control-label">Nombre</label>
                             <input type="hidden" name="idProductos" id="idProductos">
-                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Razon social" required>
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Producto" required>
                           </div>    
 
                           <div class="form-group"> <!-- Street 1 -->
                             <label for="street1_id" class="control-label">Peso</label>
-                            <input type="text" class="form-control" id="peso" name="peso" placeholder="peso">
+                            <input type="text" class="form-control" id="number" name="peso" placeholder="peso">
                           </div>                    
                             
                          
