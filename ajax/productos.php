@@ -33,7 +33,7 @@ switch ($_GET["op"]) {
 						"0"=>'<button class="btn btn-warning" onclick="mostrar('.$registro->idProductos.')"><i class="fa fa-pencil"></i></button>',
  						"1"=>$registro->nombre,
  						"2"=>$registro->peso,
- 						"3"=>$registro->descripcion,
+ 						"3"=>$registro->descripcion
  					
 					);			
 			}

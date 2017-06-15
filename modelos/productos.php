@@ -15,14 +15,14 @@ Class Productos
 		return ejecutarConsulta($sql);
 	}
 
-	public function editar($idProdcutos,$nombre,$peso,$descripcion)
+	public function editar($idProductos,$nombre,$peso,$descripcion)
 	{
-		$sql="UPDATE productos set nombre='$nombre',peso='$peso',descripcion='$descripcion' where idProdcutos='$idProdcutos' ";
+		$sql="UPDATE productos set nombre='$nombre',peso='$peso',descripcion='$descripcion' where idProductos='$idProductos' ";
 		return ejecutarConsulta($sql);
 	}
-	public function mostrar($idProdcutos)
+	public function mostrar($idProductos)
 	{
-		$sql="SELECT * from productos where idProdcutos='$idProdcutos' ";
+		$sql="SELECT * from productos where idProductos='$idProductos' ";
 		return ejecutarConsultaSimpleFila($sql);
 
 	}

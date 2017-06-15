@@ -113,7 +113,7 @@ function mostrar(idOperadores)
 		$("#provincia").selectpicker('refresh');
 		$("#tel").val(data.tel);
 		$("#observacion").val(data.observacion);
-		$("idOperadores").val(data.idOperadores);
+		$("#idOperadores").val(data.idOperadores);
 
 	})
 }
