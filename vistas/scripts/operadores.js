@@ -13,12 +13,14 @@ function init()
 
 function limpiar()
 {
-	$("#nombre").attr("");
-	$("#cuit").attr("");
-	$("#direccion").attr("");
-	$("#ciudad").attr("");
-	$("#tel").attr("");
-	$("#observacion").attr("");
+	$("#nombre").val("");
+	$("#cuit").val("");
+	$("#direccion").val("");
+	$("#ciudad").val("");
+	$("#tel").val("");
+	$("#observacion").val("");
+	$("#idOperadores").val("");
+
 }
 
 function mostrarform(flag)
@@ -95,6 +97,25 @@ function guardaryeditar(e)
 	});
 
 	limpiar();
+}
+function mostrar(idOperadores)
+{
+	$.post("../ajax/operadores.php?op=mostrar",{idOperadores : idOperadores},function(data,status)
+	{
+		data = JSON.parse(data);
+		mostrarform(true);
+
+		$("#nombre").val(data.nombre);
+		$("#cuit").val(data.cuit);
+		$("#direccion").val(data.direccion);
+		$("#ciudad").val(data.ciudad);
+		$("#provincia").val(data.provincia);
+		$("#provincia").selectpicker('refresh');
+		$("#tel").val(data.tel);
+		$("#observacion").val(data.observacion);
+		$("idOperadores").val(data.idOperadores);
+
+	})
 }
 
 init();

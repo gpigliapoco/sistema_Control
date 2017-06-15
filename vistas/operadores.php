@@ -43,7 +43,8 @@ require 'header.php';
                         <form name="formulario" id="formulario" method="POST">                       
                          <div class="form-group"> <!-- Full Name -->
                             <label for="full_name_id" class="control-label">Nombre</label>
-                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Razon social">
+                            <input type="hidden" name="idOperadores" id="idOperadores">
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Razon social" required>
                           </div>    
 
                           <div class="form-group"> <!-- Street 1 -->
@@ -53,16 +54,16 @@ require 'header.php';
                             
                           <div class="form-group"> <!-- Street 2 -->
                             <label for="street2_id" class="control-label">Direccion</label>
-                            <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Direccion">
+                            <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Direccion" required>
                            </div>    
 
                           <div class="form-group"> <!-- City-->
                               <label for="city_id" class="control-label">Ciudad</label>
-                              <input type="text" class="form-control" id="ciudad" name="ciudad" placeholder="Ciudad">
+                              <input type="text" class="form-control" id="ciudad" name="ciudad" placeholder="Ciudad" required>
                           </div>   
                           <div class="form-group"> <!-- State Button -->
                               <label for="state_id" class="control-label">Provincia</label>
-                              <select class="form-control" id="provincia" name="provincia">
+                              <select class="form-control select-picker" id="provincia" name="provincia">
                                   <option value="Buenos aires">Buenos aires</option>
                                   <option value="Buenos aires">Santa fe</option>
                                   <option value="Cordoba">Cordoba</option>
@@ -70,6 +71,7 @@ require 'header.php';
                                   <option value="Misiones">Misiones</option>
                                   <option value="Corrientes">Corrientes</option>
                                   <option value="Tucuman">Tucuman</option> 
+                                  <option value="Mendoza">Mendoza</option> 
                               </select>                    
                           </div> 
                           <div class="form-group"> <!-- City-->

@@ -42,11 +42,10 @@ switch ($_GET["op"]) {
 			while ($registro=$respuesta->fetch_object()) {
 				$data[]=array(
 
-					"0"=>'<button class="btn btn-warning" onclick="mostrar('.$registro->idOperadores.')"><i class="fa fa-pencil"></i></button>'.
- 					' <button class="btn btn-danger" onclick="eliminar('.$registro->idOperadores.')"><i class="fa fa-trash"></i></button>',
+					"0"=>'<button class="btn btn-warning" onclick="mostrar('.$registro->idOperadores.')"><i class="fa fa-pencil"></i></button>',
  					"1"=>$registro->nombre,
- 					"2"=>$registro->direccion,
- 					"3"=>$registro->cuit,
+ 					"2"=>$registro->cuit,
+ 					"3"=>$registro->direccion,
  					"4"=>$registro->ciudad,
  					"5"=>$registro->provincia
 
